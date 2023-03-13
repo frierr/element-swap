@@ -1,0 +1,151 @@
+html, body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle at 50% 31%, rgba(255,255,255,1) 0%, rgba(127,255,255,1) 25%, rgba(127,200,255,1) 50%, rgba(0,127,255,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    user-select: none;
+    color: black;
+    overflow: hidden;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 150px auto 150px;
+    gap: 0;
+    margin: auto;
+    padding: 0;
+    width: min(69%, 1200px);
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.play-field {
+    display: grid;
+    grid-auto-columns: 50px;
+    grid-auto-rows: 50px;
+    gap: 1px;
+    background-color: black;
+    box-shadow: 5px 5px 15px black;
+}
+
+.gameblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border: 1px solid rgba(0,127,127,1);
+    font-size: 1em;
+}
+
+.selectedblock {
+    background-color: aqua;
+}
+
+.neighbourblock {
+    background-color: aquamarine;
+}
+
+.gameblock:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+.scoreboard {
+    display: block;
+}
+
+.scoreboard-hi {
+    opacity: 0.6;
+    font-size: 0.5em;
+}
+
+.scoreboard-curr {
+    font-size: 0.8em;
+}
+
+.scoreboard-time {
+    font-size: 1.5em;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    margin: 10px;
+    width: 200px;
+    border: 1px solid rgba(0,127,127,1);
+    border-radius: 10px;
+}
+
+.button:hover {
+    border: 2px solid rgba(0,127,127,1);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.slidecontainer {
+    margin: 10px;
+    width: 200px;
+    font-size: 0.69em;
+}
+  
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: whitesmoke;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+  
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 25px;
+    border-radius: 3px;
+    background: rgba(0,127,127,1);
+    cursor: pointer;
+    box-shadow: 1px 1px 3px black;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border: 1px solid rgba(0,127,127,1);
+    font-size: 1em;
+}
+
+.box-sel {
+    font-family: 'Caveat', cursive;
+    font-size: 1.5em;
+    color: blue;
+}
+
+.box-sel:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

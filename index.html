@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Element Swap</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="actions-top">
+            <div class="scoreboard scoreboard-hi"><span>high score: </span><span id="high-score">0</span></div>
+            <div class="scoreboard scoreboard-curr"><span>current score: </span><span id="current-score">0</span></div>
+            <div class="scoreboard scoreboard-time"><span id="current-time"></span></div>
+        </div>
+        <div class="center">
+            <div class="play-field" id="field"></div>
+        </div>
+        <div class="center" id="actions-bot">
+            <div class="slidecontainer">
+                <span>Difficulty:</span>
+                <input type="range" min="6" max="12" value="9" class="slider" id="diff">
+            </div>
+            <div class="button" onclick="start();" id="actions-start">start</div>
+        </div>
+    </div>
+    <script src="./code.js"></script>
+</body>
+</html>
